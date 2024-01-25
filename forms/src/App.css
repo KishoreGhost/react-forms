@@ -1,0 +1,53 @@
+.parent {
+  text-align: center;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.successMessage {
+  color: rgb(110, 218, 110);
+  font-weight: bold;
+}
+
+.inputContainer {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 80%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin: 5px;
+}
+
+.submitButton {
+  background: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
