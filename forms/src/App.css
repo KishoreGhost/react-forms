@@ -1,9 +1,8 @@
 .parent {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  margin-top: 50px;
-  border: 2px solid black;
+  margin-top: 8rem;
   border-radius: 15px;
-  font-family:Arial, Helvetica, sans-serif;
 }
 
 .form {
@@ -34,7 +33,7 @@
   padding: 8px;
   box-sizing: border-box;
   border-radius: 10px;
-  border: none;
+  /* border: none; */
 }
 
 .error {

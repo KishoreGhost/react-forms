@@ -5,7 +5,7 @@ const Forms = () => {
     firstName: "",
     lastName: "",
     email: "",
-    password: "",
+    phoneNo: "",
   });
 
   const [error, setError] = useState({});
@@ -42,8 +42,10 @@ const Forms = () => {
     if (data.email.trim() === "") {
       error.email = "Please enter the Email";
     }
-    if (data.password.trim() === "") {
-      error.password = "Please enter the Password";
+    if (data.phoneNo.trim() === "") {
+      error.phoneNo = "Please enter the phone number";
+    }else if(data.phoneNo.length != 10){
+      error.phoneNo = "Please enter a valid Phone Number"
     }
     return error;
   };
@@ -98,17 +100,17 @@ const Forms = () => {
           </div>
 
           <div className="inputContainer">
-            <label htmlFor="password" className="label">
-              Enter Your password
+            <label htmlFor="phoneNo" className="label">
+              Enter Your phone number
             </label>
             <input
-              type="password"
-              name="password"
-              placeholder="Enter Your password"
+              type="number"
+              name="phoneNo"
+              placeholder="Enter Your Phone number"
               onChange={handleInput}
               className="input"
             />
-            {error.password ? <p className="error">{error.password}</p> : ""}
+            {error.phoneNo ? <p className="error">{error.phoneNo}</p> : ""}
           </div>
           <input type="submit" value={"Register"} className="submitButton" />
         </form>
